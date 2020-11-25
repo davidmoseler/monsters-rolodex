@@ -9,7 +9,6 @@ export const CardList = (props) => {
             props.monsters.map((monster, monsterIdx) => (
                 <Card
                     key={monsterIdx}
-                    idx={monsterIdx}
                     monster={monster}
                 />
             ))

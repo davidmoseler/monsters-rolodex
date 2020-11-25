@@ -3,7 +3,10 @@ import './card.styles.css'
 
 export const Card = (props) => {
     return <div className="card-container">
-        <h1>{props.monster.name}</h1>
-        <img alt={`monster${props.idx}`} src={`https://robohash.org/${props.idx}?set=set2`}></img>
+        <img alt={`monster${props.monster.id}`} src={
+            `https://robohash.org/${props.monster.id}?set=set2`
+        }></img>
+        <h2>{props.monster.name}</h2>
+        <p>{props.monster.email}</p>
     </div>
 }
